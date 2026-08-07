@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Série Temporal</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="titulo">
+
+<h1>Dashboard</h1>
+
+<p>
+Abandono de Pessoas Incapazes no Ceará
+</p>
+
+</div>
+
+
+
+<nav>
+
+<a href="index.html">
+Mapa
+</a>
+
+
+<a href="analises.html">
+Análises
+</a>
+
+
+<a href="temporal.html" class="ativo">
+Série Temporal
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<main>
+
+
+<section class="secao">
+
+
+<h2>
+Evolução mensal das vítimas registradas
+</h2>
+
+
+<div class="grafico-card">
+
+<canvas id="serieCompleta"></canvas>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="secao">
+
+
+<h2>
+Comparação entre grupos
+</h2>
+
+
+<div class="grafico-card">
+
+<canvas id="comparacaoSeries"></canvas>
+
+</div>
+
+
+</section>
+
+
+<section class="secao">
+
+    <h2>
+        Sazonalidade dos casos
+    </h2>
+
+
+    <div class="grafico-card">
+
+        <canvas id="sazonalidade"></canvas>
+
+    </div>
+
+
+</section>
+
+
+<section class="secao">
+
+
+<h2>
+Indicadores temporais
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+Maior número mensal
+</h3>
+
+<p id="maiorMes">
+-
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Média mensal
+</h3>
+
+<p id="mediaMensal">
+-
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Total no período
+</h3>
+
+<p id="totalPeriodo">
+-
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Último mês registrado
+</h3>
+
+<p id="ultimoMes">
+-
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Pico mensal
+</h3>
+
+<p id="picoMensal">
+-
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Ano com maior ocorrência
+</h3>
+
+<p id="anoMaior">
+-
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Variação anual
+</h3>
+
+<p id="variacaoAnual">
+-
+</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+
+
+<script src="js/temporal.js"></script>
+
+
+</body>
+
+</html>

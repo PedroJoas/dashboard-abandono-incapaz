@@ -414,3 +414,11 @@ footer{
 @media(max-width:600px){
     .grafico-card{ height:260px; }
 }
+
+/* Limita largura de gráficos em páginas com um único gráfico por seção */
+.secao > .grafico-card{
+    width:100%;
+    max-width:900px;
+    margin:0 auto;
+}
+
