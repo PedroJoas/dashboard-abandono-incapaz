@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Análises - Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="titulo">
+
+        <h1>Dashboard</h1>
+
+        <p>Abandono de Pessoas Vulneráveis no Ceará</p>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Mapa</a>
+
+        <a href="analises.html" class="ativo">
+            Análises
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+    <!-- ================================================= -->
+    <!-- VÍTIMAS -->
+    <!-- ================================================= -->
+
+    <section class="secao">
+
+        <h2>Vítimas</h2>
+
+        <div class="graficos-grid">
+
+            <div class="grafico-card">
+
+                <h3>Distribuição das Idades</h3>
+
+                <canvas id="idadeVitimas"></canvas>
+
+            </div>
+
+
+            <div class="grafico-card">
+
+                <h3>Sexo</h3>
+
+                <canvas id="sexoVitimas"></canvas>
+
+            </div>
+
+
+            <div class="grafico-card">
+
+                <h3>Faixa Etária</h3>
+
+                <canvas id="faixaVitimas"></canvas>
+
+            </div>
+
+
+            <div class="grafico-card">
+
+                <h3>Tipo de Local</h3>
+
+                <canvas id="localVitimas"></canvas>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- INDICIADOS -->
+    <!-- ================================================= -->
+
+    <section class="secao">
+
+        <h2>Indiciados</h2>
+
+        <div class="graficos-grid">
+
+            <div class="grafico-card">
+
+                <h3>Distribuição das Idades</h3>
+
+                <canvas id="idadeIndiciados"></canvas>
+
+            </div>
+
+
+            <div class="grafico-card">
+
+                <h3>Sexo</h3>
+
+                <canvas id="sexoIndiciados"></canvas>
+
+            </div>
+
+
+            <div class="grafico-card">
+
+                <h3>Faixa Etária</h3>
+
+                <canvas id="faixaIndiciados"></canvas>
+
+            </div>
+
+
+            <div class="grafico-card">
+
+                <h3>Relacionamento</h3>
+
+                <canvas id="relacionamento"></canvas>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    Fonte: Superintendência de Pesquisa e Estratégia de Segurança Pública (Supesp)
+    Período: Janeiro/2015 até Novembro/2025
+
+</footer>
+
+
+
+<script src="js/main.js"></script>
+
+<script src="js/graficos.js"></script>
+
+</body>
+
+</html>

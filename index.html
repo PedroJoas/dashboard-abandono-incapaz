@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Abandono de Vulneráveis</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="titulo">
+        <h1>Dashboard</h1>
+        <p>Abandono de Pessoas Vulneráveis no Ceará</p>
+    </div>
+
+    <nav>
+
+        <a href="index.html" class="ativo">Mapa</a>
+
+        <a href="analises.html">Análises</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- ============================ -->
+    <!-- FILTRO -->
+    <!-- ============================ -->
+
+    <section class="painel">
+
+        <div class="filtro">
+
+            <label for="tipoMapa">
+                Visualizar:
+            </label>
+
+            <select id="tipoMapa">
+
+                <option value="municipios">
+                    Municípios
+                </option>
+
+                <option value="ais">
+                    AIS Municípios
+                </option>
+
+                <option value="fortaleza">
+                    AIS Fortaleza
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================ -->
+    <!-- CARDS -->
+    <!-- ============================ -->
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h3>Vítimas</h3>
+
+            <span id="totalVitimas">
+                --
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Indiciados</h3>
+
+            <span id="totalIndiciados">
+                --
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Idade Média das Vítimas</h3>
+
+            <span id="idadeMediaVitimas">
+                --
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Idade Média dos Indiciados</h3>
+
+            <span id="idadeMediaIndiciados">
+                --
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>% Mulheres Vítimas</h3>
+
+            <span id="percMulheres">
+                --
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>% Homens Vítimas</h3>
+
+            <span id="percHomens">
+                --
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================ -->
+    <!-- MAPA -->
+    <!-- ============================ -->
+
+    <section class="mapa-container">
+
+        <div id="map"></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    Fonte: Superintendência de Pesquisa e Estratégia de Segurança Pública (Supesp)
+    Período: Janeiro/2015 até Novembro/2025
+
+</footer>
+
+
+
+<!-- ============================ -->
+<!-- Bibliotecas -->
+<!-- ============================ -->
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+
+<!-- ============================ -->
+<!-- Scripts -->
+<!-- ============================ -->
+
+<script src="js/main.js"></script>
+
+<script src="js/cards.js"></script>
+
+<script src="js/mapa.js"></script>
+
+
+</body>
+</html>
