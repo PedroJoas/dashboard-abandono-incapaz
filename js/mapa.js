@@ -312,7 +312,7 @@ function onEachFeature(feature, layer){
         <br>
 
 
-        <b>Casos:</b>
+        <b>Vítimas:</b>
         ${p.casos}
         <br>
 
