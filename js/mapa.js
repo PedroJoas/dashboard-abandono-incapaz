@@ -83,6 +83,14 @@ async function trocarMapa(tipo){
             break;
 
 
+        case "faltantes":
+
+            arquivo =
+                "dados/taxa_faltantes_mun_geometry.geojson";
+
+            break;
+
+
         case "ais":
 
             arquivo =
@@ -341,14 +349,34 @@ function onEachFeature(feature, layer){
     `);
 
 
+    const hoverPopup = function(e){
+
+        destacar(e);
+        e.target.openPopup();
+
+    };
+
+
+    const sairPopup = function(e){
+
+        resetar(e);
+        e.target.closePopup();
+
+    };
+
 
     layer.on({
 
-        mouseover:destacar,
+        mouseover:hoverPopup,
 
-        mouseout:resetar,
+        mouseout:sairPopup,
 
-        click:zoomFeature
+        click:function(e){
+
+            zoomFeature(e);
+            e.target.openPopup();
+
+        }
 
     });
 

@@ -22,6 +22,15 @@ arquivos = {
     },
 
 
+    "taxa_faltantes_mun_geometry.csv": {
+
+        "nome": "nm_municipio",
+        "territorio": "nm_ais_x",
+        "crs": "auto"
+
+    },
+
+
     "casos_ais_shape.csv": {
 
         "nome": "nm_ais",
